@@ -1,20 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Event Catalog</title>
-</head>
-<body>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
     <h1>Event Catalog</h1>
+
     <h2>Add an Event</h2>
-    <form>
-        <label for="title">Title of Event:</label>
-        <input id="title" type="text" />
-        <input type="submit" />
+    <form id="event-form">
+      <input id="title" type="text" placeholder="Event title" required />
+      <button type="submit">Add</button>
     </form>
-    <h2>All Events</h2>
+
+    <h2>Events</h2>
     <ul id="event-list"></ul>
+
+    <p id="status"></p>
+
     <script src="./script.js"></script>
-</body>
+  </body>
 </html>
